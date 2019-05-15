@@ -1,0 +1,13 @@
+use-verbose-error-messages=false
+http-only=true
+cookie-path=/
+token-renewuntil=43200
+token-notbefore-tolerance=0
+password=q6b8U/tC6WzLFB9ZkCvJKA==
+token-name=spopentoken
+use-cookie=false
+cipher-suite=2
+use-sunjce=false
+token-lifetime=300
+obfuscate-password=true
+track-authntime=true

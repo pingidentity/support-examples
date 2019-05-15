@@ -1,0 +1,10 @@
+#Config
+#Thu Apr 12 12:42:20 ADT 2012
+hostPF=localhost
+useSSL=true
+httpPort=9030
+httpsPort=9031
+contextPathPF=/
+wsUname=heuristics
+wsPwd=Changeme1
+attributeNamesList=password|authnContext

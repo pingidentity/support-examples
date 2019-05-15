@@ -1,0 +1,77 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>SP Sample Application</display-name>   
+	<context-param>
+		<param-name>config-path</param-name>
+		<param-value>config/</param-value>
+   	</context-param>
+   	<context-param>
+		<param-name>users-props-file</param-name>
+		<param-value>pingfederate-sp-demo-users.props</param-value>
+   	</context-param>
+   	<context-param>
+		<param-name>config-file</param-name>
+		<param-value>pingfederate-sp-config.props</param-value>
+   	</context-param>
+   	<context-param>
+      		<param-name>opentoken-properties</param-name>
+      		<param-value>agent-config.txt</param-value>
+   	</context-param>
+
+	<servlet>
+		<servlet-name>SpSampleAppControllerServlet</servlet-name>
+		<display-name>SpSampleAppControllerServlet</display-name>
+		<servlet-class>
+			com.pingidentity.sample.sp.servlet.SpSampleAppControllerServlet
+		</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>SpSampleAppControllerServlet</servlet-name>
+		<url-pattern>/MainPage</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SpSampleAppControllerServlet</servlet-name>
+		<url-pattern>/MainPage/</url-pattern>
+	</servlet-mapping>
+
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/notFound.jsp</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>400</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>405</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+	
+	<security-constraint>
+        <web-resource-collection>
+        	<web-resource-name>Restricted Access - Get and POST Only</web-resource-name>
+        	<url-pattern>/*</url-pattern>
+			<!--
+            	Remove all the http methods below                                    
+			-->
+			<http-method>DELETE</http-method>
+			<http-method>PUT</http-method>
+			<http-method>HEAD</http-method>
+			<http-method>OPTIONS</http-method>
+			<http-method>TRACE</http-method>
+        </web-resource-collection>
+        <auth-constraint />
+    </security-constraint>
+    
+</web-app>

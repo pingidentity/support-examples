@@ -1,0 +1,15 @@
+ID=1089594
+Product=PingFederate
+Version=9.2
+IssueDate=2019-01-29
+EnforcementType=5
+ExpirationDate=2019-02-8
+ConnectionLimit=3
+NodeLimit=3
+Tier=Free
+SaasProvisioning=true
+WSTrustSTS=true
+OAuth=true
+GracePeriod=10
+SignCode=FF1F
+Signature=302D02150083B7276037788BDAABE1AAE783BD5C21D78D73B90214279CBAFC55F8A9E30D6F7102EC8D2004D97C03F6

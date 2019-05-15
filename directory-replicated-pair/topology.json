@@ -1,0 +1,26 @@
+{
+    "serverInstances" : [
+        {
+            "instanceName" : "02-replicated-pair_pingdirectory_1",
+            "hostname" : "02-replicated-pair_pingdirectory_1",
+            "location" : "docker",
+            "ldapPort" : 389,
+            "ldapsPort" : 636,
+            "replicationPort" : 989,
+            "startTLSEnabled" : true,
+            "preferredSecurity" : "SSL",
+            "product" : "DIRECTORY"
+        },
+        {
+            "instanceName" : "02-replicated-pair_pingdirectory_2",
+            "hostname" : "02-replicated-pair_pingdirectory_2",
+            "location" : "docker",
+            "ldapPort" : 389,
+            "ldapsPort" : 636,
+            "replicationPort" : 989,
+            "startTLSEnabled" : true,
+            "preferredSecurity" : "SSL",
+            "product" : "DIRECTORY"
+        }
+    ]
+}

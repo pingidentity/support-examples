@@ -1,0 +1,5 @@
+# This file defines values for user attributes.
+# [user]=[pass]|[attr1]|[attr2]|[attr3]
+joe=test|urn:oasis:names:tc:SAML:2.0:ac:classes:Password|joe_value1|joe_value2|joe_value3
+sarah=test|urn:oasis:names:tc:SAML:2.0:ac:classes:Password|sarah_value1|sarah_value2|sarah_value3
+sp=test|urn:oasis:names:tc:SAML:2.0:ac:classes:Password|sp_value1|sp_value2|sp_value3

@@ -1,0 +1,14 @@
+cookie-path=/
+obfuscate-password=true
+cipher-suite=2
+session-cookie=false
+token-name=spopentoken
+password=Bg/qgSS9m1kua0TeJipdiw==
+cookie-domain=
+token-notbefore-tolerance=0
+token-renewuntil=43200
+use-sunjce=false
+secure-cookie=false
+token-lifetime=300
+use-cookie=false
+use-verbose-error-messages=false

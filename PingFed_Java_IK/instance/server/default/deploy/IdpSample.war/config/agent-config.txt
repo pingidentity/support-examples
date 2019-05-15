@@ -1,0 +1,12 @@
+password=Bg/qgSS9m1kua0TeJipdiw==
+cookie-path=/
+token-renewuntil=43200
+use-sunjce=false
+token-lifetime=300
+use-cookie=true
+token-notbefore-tolerance=0
+cipher-suite=2
+token-name=idpopentoken
+obfuscate-password=true
+cookie-domain=
+use-verbose-error-messages=false
